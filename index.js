@@ -2,14 +2,10 @@
 
 "use strict";
 
-// made by @y_ga
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = "0";
-// made by @y_ga
 process.title = "TWILIGHT";
 
-// made by @y_ga
 if (process.platform === 'win32') {
-    // made by @y_ga
     try {
         // made by @y_ga
         const { spawn } = require('child_process');
@@ -17,35 +13,22 @@ if (process.platform === 'win32') {
         spawn('wmic', ['process', 'where', `processid=${process.pid}`, 'CALL', 'setpriority', '128'], {stdio: 'ignore'});
         // made by @y_ga
     } catch (e) {}
-    // made by @y_ga
 } else {
-    // made by @y_ga
     try {
-        // made by @y_ga
         require('os').setPriority(0, require('os').constants.PRIORITY_HIGH);
-        // made by @y_ga
     } catch (e) {}
-    // made by @y_ga
 }
 
 // made by @y_ga
 const tls = require('tls');
-// made by @y_ga
 const http2 = require('http2');
-// made by @y_ga
 const WebSocket = require('ws');
-// made by @y_ga
 const fs = require('fs');
 
-// made by @y_ga
 const CONFIG = {
-    // made by @y_ga
     TOKEN: "stop skidding clown ",
-    // made by @y_ga
     SERVER_ID: "1409731598257225768", 
-    // made by @y_ga
     PASSWORD: "R10232007C"
-    // made by @y_ga
 };
 
 // made by @y_ga
