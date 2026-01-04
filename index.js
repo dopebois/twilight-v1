@@ -28,7 +28,7 @@ const fs = require('fs');
 const CONFIG = {
     TOKEN: "stop skidding clown ",
     SERVER_ID: "1409731598257225768", 
-    PASSWORD: "R10232007C"
+    PASSWORD: "yaga_chan"
 };
 
 // made by @y_ga
